@@ -1,1 +1,223 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #000;
+      color: #fff;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background: #000;
+    }
+
+    header {
+      background-color: transparent;
+      color: #fff;
+      width: 100%;
+      padding: 2rem 0;
+      text-align: center;
+      border-bottom: 1px solid #fff;
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+
+    main {
+      max-width: 960px;
+      width: 90%;
+      margin: 3rem auto 6rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .app-card {
+      background: transparent;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+    }
+
+    .app-card:hover {
+      border-color: #ccc;
+    }
+
+    .app-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .app-description {
+      flex-grow: 1;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      color: #ccc;
+      line-height: 1.5;
+    }
+
+    .visit-button {
+      text-decoration: none;
+      color: #000;
+      background-color: #fff;
+      border: 2px solid #fff;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      display: inline-block;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .visit-button:hover {
+      background-color: transparent;
+      color: #fff;
+    }
+
+    .visit-button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 1px solid #fff;
+      background: transparent;
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      
+      main {
+        grid-template-columns: 1fr;
+        margin: 2rem auto 4rem;
+      }
+      
+      .app-card {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <header>
+    <h1>Plutana's App Projects Hub</h1>
+  </header>
+
+  <main>
+    <article class="app-card">
+      <h2 class="app-title">Minecraft Launcher</h2>
+      <p class="app-description">
+        Work in progress currently.
+      </p>
+      <div class="app-links">
+        <button class="visit-button" disabled onclick="alert('Minecraft Launcher is a work in progress.')">Visit</button>
+      </div>
+    </article>
+
+    <article class="app-card">
+      <h2 class="app-title">Roblox Executor</h2>
+      <p class="app-description">
+        Up and running currently.
+      </p>
+      <div class="app-links">
+        <a href="https://plutana-eng.github.io/Roblox-Exucuter/" target="_blank" rel="noopener noreferrer" class="visit-button">Visit</a>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Plutana's Projects. Made by Plutana Discord.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS('particles-js', {
+        particles: {
+            number: {
+                value: 60,
+                density: {
+                    enable: true,
+                    value_area: 800
+                }
+            },
+            color: {
+                value: '#ffffff'
+            },
+            shape: {
+                type: 'circle'
+            },
+            opacity: {
+                value: 0.8,
+                random: true
+            },
+            size: {
+                value: 4,
+                random: true
+            },
+            line_linked: {
+                enable: false
+            },
+            move: {
+                enable: true,
+                speed: 2,
+                direction: 'bottom',
+                random: true,
+                straight: false,
+                out_mode: 'out',
+                bounce: false
+            }
+        },
+        interactivity: {
+            detect_on: 'canvas',
+            events: {
+                onhover: {
+                    enable: false
+                },
+                onclick: {
+                    enable: false
+                },
+                resize: true
+            }
+        },
+        retina_detect: true
+    });
+  </script>
+</body>
+</html>
