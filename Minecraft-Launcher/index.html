@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Plutana_exe</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <a href="https://plutana-eng.github.io/" id="home-button" aria-label="Home">Home</a>
+
+    <div id="particles-js"></div>
+
+    <div class="main-container">
+
+        <div class="content-left">
+
+            <h1>Plutana_exe</h1>
+
+            <p class="subtitle">Roblox Executor</p>
+
+            <p class="credits">Made by Plutana</p>
+
+            <div class="buttons">
+                <button id="download-btn" class="btn">Download</button>
+                <button id="view-all-btn" class="btn">View All</button>
+            </div>
+
+        </div>
+
+        <div class="content-right">
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/Plutana-eng/Plutana-eng.github.io/refs/heads/main/Icons/Roblox-Exucuter.PNG" alt="Roblox Exucuter" class="tilt-image" id="tilt-image" />
+            </div>
+        </div>
+
+    </div>
+
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-container">
+            <div class="popup-header">
+                <h2>All Versions</h2>
+                <button id="close-popup" class="close-btn" aria-label="Close popup">&times;</button>
+            </div>
+            <div class="popup-content">
+                <div id="loading-message">Loading versions...</div>
+                <div id="versions-list" class="versions-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
