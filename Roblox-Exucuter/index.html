@@ -1,46 +1,12 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Plutana_exe</title>
-
-    <link rel="stylesheet" href="styles.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <style>
-        /* Style for the home button with hollow black and white border/outline matching other buttons */
-        #home-button {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            padding: 12px 24px;
-            font-size: 16px;
-            font-weight: 700;
-            background-color: transparent;
-            color: black;
-            border: 2px solid black;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            z-index: 1000;
-            font-family: 'Roboto', sans-serif;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        #home-button:hover {
-            background-color: black;
-            color: white;
-            border-color: black;
-        }
-    </style>
-
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -48,8 +14,6 @@
     <a href="https://plutana-eng.github.io/" id="home-button" aria-label="Home">Home</a>
 
     <div id="particles-js"></div>
-
-    
 
     <div class="main-container">
 
@@ -61,58 +25,35 @@
 
             <p class="credits">Made by Plutana</p>
 
-            
-
             <div class="buttons">
-
                 <button id="download-btn" class="btn">Download</button>
-
                 <button id="view-all-btn" class="btn">View All</button>
-
             </div>
 
         </div>
 
-        
-
         <div class="content-right">
-
             <div class="image-container">
-
-                <img src="https://raw.githubusercontent.com/Plutana-eng/Plutana-eng.github.io/refs/heads/main/Icons/Roblox-Exucuter.PNG" alt="Roblox Exucuter" class="tilt-image" id="tilt-image">
-
+                <img src="https://raw.githubusercontent.com/Plutana-eng/Plutana-eng.github.io/refs/heads/main/Icons/Roblox-Exucuter.PNG" alt="Roblox Exucuter" class="tilt-image" id="tilt-image" />
             </div>
-
         </div>
 
     </div>
 
     <div id="popup-overlay" class="popup-overlay">
-
         <div class="popup-container">
-
             <div class="popup-header">
-
                 <h2>All Versions</h2>
-
-                <button id="close-popup" class="close-btn">&times;</button>
-
+                <button id="close-popup" class="close-btn" aria-label="Close popup">&times;</button>
             </div>
-
             <div class="popup-content">
-
                 <div id="loading-message">Loading versions...</div>
-
                 <div id="versions-list" class="versions-list"></div>
-
             </div>
-
         </div>
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
     <script src="script.js"></script>
 
 </body>
